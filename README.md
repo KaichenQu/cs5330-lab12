@@ -15,16 +15,15 @@ Hugging Face. Python 3.10+ is fine.
 
 ## Your task
 
-Fill in the two `# TODO: Your code here` blocks:
+Fill in the three `# TODO: Your code here` blocks: the `sticker()` function
+that paints a misleading word onto the photo, the `report()` function that
+classifies images against `LABELS` and prints the winner, and the main body
+that ties them together. Each docstring says what the function must return —
+how you get there is up to you.
 
-1. **`sticker(word, size)`** — draw two white stickers with a misleading word
-   on a photo of a Granny Smith apple.
-2. **The classification loop** — run zero-shot image classification on each
-   variant with both models and print the top prediction.
-
-Everything else (model ids, candidate labels, sticker positions, font) is
-already filled in. On macOS the font path works as given; on Windows or Linux,
-point `FONT` at any bold `.ttf` you have.
+The constants are given: model ids, candidate labels, sticker positions, font,
+and the word/font-size variants to test. On macOS the font path works as is;
+on Windows or Linux, point `FONT` at any bold `.ttf` you have.
 
 ## What you should see
 
