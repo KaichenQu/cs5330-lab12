@@ -5,7 +5,6 @@
 from PIL import Image, ImageDraw, ImageFont  # noqa: F401
 from transformers import pipeline  # noqa: F401
 
-# ---- given: nothing in this block needs to change -------------------------
 IMAGE_PATH = "apple.jpg"
 LABELS = ["an apple", "an iPod", "a pizza"]
 FONT = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"  # any bold .ttf works
@@ -13,9 +12,8 @@ MODELS = [
     "wkcn/TinyCLIP-ViT-8M-16-Text-3M-YFCC15M",  # 94 MB, trained on YFCC15M
     "wkcn/TinyCLIP-ViT-40M-32-Text-19M-LAION400M",  # 337 MB, trained on LAION-400M
 ]
-POSITIONS = [(130, 150), (410, 160)]  # one sticker over each apple
+POSITIONS = [(130, 150), (410, 160)]
 VARIANTS = [("iPod", 80), ("pizza", 80), ("pizza", 70), ("pizza", 60)]
-# ---------------------------------------------------------------------------
 
 
 def sticker(image, word, size):
@@ -25,7 +23,7 @@ def sticker(image, word, size):
     with a small margin, and the word drawn in black on top of it.
     """
     # TODO: Your code here
-    raise NotImplementedError
+    pass
 
 
 def report(model_id, images):
@@ -37,11 +35,10 @@ def report(model_id, images):
         iPod  80px  -> an iPod (62.1%)
     """
     # TODO: Your code here
-    raise NotImplementedError
+    pass
 
 
 # TODO: Your code here
 # Load IMAGE_PATH, shrink it to fit within 640x640, and build a dict of images:
 # the clean photo plus one attacked copy per entry in VARIANTS. Save the iPod
-# attack as 'apple_ipod.jpg' so you can look at it, then run report() over the
-# whole dict once per model in MODELS.
+# attack as 'apple_ipod.jpg', then run report() over the dict once per model.
