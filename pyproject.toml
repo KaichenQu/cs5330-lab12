@@ -1,0 +1,10 @@
+[project]
+name = "lab12-code"
+version = "0.1.0"
+description = "CS 5330 Lab 12 (2026): typographic attack demo"
+requires-python = ">=3.12"
+dependencies = [
+    "pillow>=12.3.0",
+    "torch>=2.13.0",
+    "transformers>=5.14.1",
+]
