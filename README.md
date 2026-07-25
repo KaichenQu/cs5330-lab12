@@ -1,16 +1,17 @@
 # CS 5330 Lab 12 — Typographic Attacks on Vision-Language Models
 
 Starter code for the Lab 12 hands-on exercise. Runs on a laptop CPU, no GPU
-needed. Managed with [uv](https://docs.astral.sh/uv/).
+needed.
 
-## Run
+## Setup
 
 ```bash
-uv run python typographic_attack_starter.py
+pip install pillow transformers torch
+python typographic_attack_starter.py
 ```
 
-`uv` builds the environment on the first run, then downloads two small CLIP
-checkpoints (94 MB + 337 MB) from Hugging Face.
+The first run downloads two small CLIP checkpoints (94 MB + 337 MB) from
+Hugging Face. Python 3.10+ is fine.
 
 ## Your task
 
@@ -22,7 +23,8 @@ Fill in the two `# TODO: Your code here` blocks:
    variant with both models and print the top prediction.
 
 Everything else (model ids, candidate labels, sticker positions, font) is
-already filled in.
+already filled in. On macOS the font path works as given; on Windows or Linux,
+point `FONT` at any bold `.ttf` you have.
 
 ## What you should see
 

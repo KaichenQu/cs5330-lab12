@@ -1,7 +1,10 @@
 # Solution — kept local, not published to students
 typographic_attack.py
 
-# Environments and caches
+# Local environment setup (students bring their own)
+pyproject.toml
+uv.lock
+.python-version
 .venv/
 __pycache__/
 .ruff_cache/

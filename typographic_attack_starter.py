@@ -1,8 +1,9 @@
 # Lab 12 — Typographic attack on a zero-shot classifier
 #
-# Fill in the two TODOs, then run:   uv run python typographic_attack_starter.py
+# Fill in the two TODOs, then run:   python typographic_attack_starter.py
 # If it works, your output matches the table on slide 7 of the deck.
 from PIL import Image, ImageDraw, ImageFont
+from transformers import pipeline  # noqa: F401  (you will need this below)
 
 # ---- given: everything you do not need to figure out ----------------------
 LABELS = ["an apple", "an iPod", "a pizza"]
